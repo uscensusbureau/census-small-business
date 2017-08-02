@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+
+  <!--
+
+      Built by Coding it Forward Fellows 
+      (https://www.codingitforward.com/)
+
+    -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Salon Use Case</title>
+  <meta name="description" content=  'Metadata description' >
+
+
+   
+
+  
+  	<link type="text/css" rel="stylesheet" href="../css/smb.css">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon-57.png"/>
+
+  	<script src="../js/jquery.min.js"></script>
+    <script src="../js/uswds.min.js"></script>
+    <script src="../js/smb.js"></script> 
+	
+
+</head>
+<!-- End of Head -->
+
+<body class="layout-demo">
+<!-- Nav -->
+<div class="usa-navbar">
+  <button class="usa-menu-btn">Menu</button>
+  <div class="usa-logo" id="logo">
+    <a href="../index.html"><img src="../img/census-logo-white.svg" alt="Census Bureau logo white"></a>
+  </div>
+</div>
+
+<!-- nav desktop -->
+<nav id="nav-desktop" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner usa-grid-wide">
+    <ul class="usa-nav-primary usa-accordion">
+      <li class="all-links">
+        <a class="usa-nav-link" href="new_business.html">
+          <span>Start a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="business-plan.html"><li class="sub-nav-link">Business Plan</li></a>
+          <a href="find-a-location.html"><li class="sub-nav-link">Find a Location</li></a>
+          <a href="naics.html"><li class="sub-nav-link">My NAICS Code</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="grow_business.html">
+          <span>Grow a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="my-customers.html"><li class="sub-nav-link">My Customers</li></a>
+          <a href="my-competitors.html"><li class="sub-nav-link">My Competitors</li></a>
+          <a href="build-a-report.html"><li class="sub-nav-link">Build a Report</li></a>
+          <a href="survey-help.html"><li class="sub-nav-link">Get Survey Help</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="article-home.html">
+          <span>Explore resources</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="cbb.html"><li class="sub-nav-link">Census Business Builder</li></a>
+          <a href="restaurant-case.html"><li class="sub-nav-link">Start a Restaurant</li></a>
+          <a href="daycare-case.html"><li class="sub-nav-link">Start a Daycare</li></a>
+          <a href="salon-case.html"><li class="sub-nav-link">Start a Beauty Salon</li></a>
+        </ul>
+      </li>
+
+      <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- nav mobile -->
+<nav id="nav-mobile" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner">
+    <ul class="usa-nav-primary usa-accordion">
+      <li>
+        
+        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+          <span>Start a Business</span>
+        </button>
+          <ul id="side-nav-1" class="usa-nav-submenu">
+            <li>
+              <a href="new_business.html">Overview</a>
+            </li>
+            <li>
+              <a href="business-plan.html">Business Plan</a>
+            </li>
+            <li>
+              <a href="find-a-location.html">Find a Location</a>
+            </li>
+            <li>
+              <a href="naics.html">My NAICS Code</a>
+            </li>
+          </ul>
+      </li>
+  
+
+      <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+            <span>Grow a Business</span>
+          </button>
+          <ul id="sidenav-2" class="usa-nav-submenu">
+            <li>
+              <a href="grow_business.html">Overview</a>
+            </li>
+            <li>
+              <a href="my-customers.html">My Customers</a>
+            </li>
+            <li>
+              <a href="my-competitors.html">My Competitors</a>
+            </li>
+            <li>
+              <a href="build-a-report.html">Build a Report</a>
+            </li>
+            <li>
+              <a href="survey-help.html">Survey Help</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+            <span>Explore Resources</span>
+          </button>
+          <ul id="sidenav-3" class="usa-nav-submenu">
+            <li>
+              <a href="article-home.html">Home</a>
+            </li>
+            <li>
+              <a href="cbb.html">Census Business Builder</a>
+            </li>
+            <li>
+              <a href="restaurant-case.html">Start a Restaurant</a>
+            </li>
+            <li>
+              <a href="daycare-case.html">Start a Day Care</a>
+            </li>
+          </ul>
+          <li>
+              <a href="salon-case.html">Start a Beauty Salon</a>
+            </li>
+        </li>
+
+        <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<!--End of Nav-->
+
+<div class="usa-overlay"></div>
+
+<main class="usa-grid-wide usa-section usa-content usa-layout-docs" id="main-content">
+
+  <!-- Side nav -->
+  <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+    <ul class="usa-sidenav-list">
+      <li>
+        <a class="usa-current" href="#salon-0">Starting a Beauty Salon</a>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a href= '#salon-1'>Find Your Customers</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <!-- sublinks -->
+          <li>
+            <a href= '#salon-1a' >Sex</a>
+          </li>
+          <li>
+            <a href= '#salon-1b' >Median household income</a>
+          </li>
+          <li>
+            <a href= '#salon-1c' >Consumer spending</a>
+          </li>
+          <!-- End of sublinks -->
+        </ul>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#salon-2'>Choose a Location</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href= '#salon-2a' >Competing businesses</a>
+          </li>
+          <li>
+            <a href= '#salon-2b' >Complementary businesses</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#salon-3'>Write a Business Plan</a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#salon-4'>Apply for a Loan</a>
+        <!-- Main header end -->
+      </li>
+
+      
+    </ul>
+  </aside>
+
+  <!-- End of Side nav -->
+
+
+  <div class="usa-width-three-fourths usa-layout-docs-main_content scrollspy">
+    <h1 id="salon-0">Starting a Beauty Salon</h1>
+    <p class="usa-font-lead">Create a Plan for Breaking Into the Beauty Industry — Without Breaking the Bank</p>
+    
+    <div class="img-container">
+      <img src="../img/stock/salon.jpg">
+    </div>
+    
+    <!-- Section 1 -->
+    <h2 id="salon-1">Find Your Customers</h2>
+    <p>Our data can help you find your ideal customers. To figure out your target customers, consider the following pieces of data:</p>
+    <h3 id="salon-1a">Sex</h3>
+    <p>Beauty salon services are typically targeted to females, so you will likely want to find a community with a high percentage of women in the population.</p>
+    <h3 id="salon-1b">Median household income</h3>
+    <p>Consider the types of goods and services your customers can afford. If you are launching a high-end salon, you will want to find customers who can afford pricier services. On the other hand, if your salon will offer an affordable pricing structure, your potential customers’ income will not be as limiting of a factor. </p>
+    <h3 id="salon-1c">Consumer spending</h3>
+    <p>Curious about your potential customers’ spending trends? Consumer spending data can help you understand the types of goods and services on which people spend their money.</p>
+    <p></br><a href="my-customers.html">Find more information</a> about your potential customers.</p>
+    
+
+    <!-- Section 2 -->
+    <h2 id="salon-2">Choose a Location</h2>
+    <p>Finding the right location for your salon relies on knowing your customers, competitors, and community. </p>
+
+    <h3 id="salon-2a">Competing businesses</h3>
+    <p>Knowing about other beauty salons in your area will help you determine if there is a need for more businesses like yours. Our statistic called “population per establishment” is a great data point to help you better understand the current market; the ratio helps you understand if there are enough customers to support another beauty salon in your selected location. </p>
+    <p></br><a href="my-competitors.html">Learn more</a> about your competitors.</p>
+
+    <h3 id="salon-2b">Complementary businesses </h3>
+    <p>Businesses that could be of interest to your potential customers — but are not beauty salons — are complementary businesses. Launching your beauty salon near a complementary business can help attract people from your target market. Complementary businesses for beauty salons include nail salons and barber shops. .</p>
+    <p></br>Want more help finding a location for a business? <a href="find-a-location.html">Check out our guide.</a></p>
+
+    <!-- Section 3 -->
+    <h2 id="salon-3">Write a Business Plan</h2>
+    <p>If you haven’t started already, it’s time to write a data-driven business plan. Establishing a roadmap for your salon will help you attain your organizational and financial goals.</p>
+    <p></br>Need help writing a business plan for a salon? <a href="business-plan.html">Read our guide</a> for more information.</p>
+
+    <!-- Section 4 -->
+    <h2 id="salon-4">Apply for a Loan</h2>
+    <p>Need help financing your salon? Banks and other small lenders will want to know more about your beauty salon’s market — including your customers and competitors. The <a href="build-a-report.html">Census Business Builder report</a> can serve as a benchmark for comparing your business plan and can also help you demonstrate the strength of your market.</p>
+    <p></br>If you need more help applying data to your loan application, please consult <a href="https://www.sba.gov/loans-grants/see-what-sba-offers/sba-loan-programs/general-small-business-loans-7a/7a-loan-application-checklist" target="_blank">this Small Business Administration checklist. </a></p>
+
+  </div>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="usa-footer usa-footer-medium" role="contentinfo">
+
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+
+         
+
+        
+          <img class="usa-footer-logo-img" src="../img/census-logo-white.svg" alt="Logo image"> 
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+<script src="../js/uswds.js"></script>
+</body>
+</html>

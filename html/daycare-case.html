@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+
+  <!--
+
+      Built by Coding it Forward Fellows 
+      (https://www.codingitforward.com/)
+
+    -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Day Care Use Case</title>
+  <meta name="description" content=  'Metadata description' >
+
+
+   
+
+  
+  	<link type="text/css" rel="stylesheet" href="../css/smb.css">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon-57.png"/>
+
+  	<script src="../js/jquery.min.js"></script>
+    <script src="../js/uswds.min.js"></script>
+    <script src="../js/smb.js"></script> 
+	
+
+</head>
+<!-- End of Head -->
+
+<body class="layout-demo">
+<!-- Nav -->
+<div class="usa-navbar">
+  <button class="usa-menu-btn">Menu</button>
+  <div class="usa-logo" id="logo">
+    <a href="../index.html"><img src="../img/census-logo-white.svg" alt="Census Bureau logo white"></a>
+  </div>
+</div>
+
+<!-- nav desktop -->
+<nav id="nav-desktop" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner usa-grid-wide">
+    <ul class="usa-nav-primary usa-accordion">
+      <li class="all-links">
+        <a class="usa-nav-link" href="new_business.html">
+          <span>Start a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="business-plan.html"><li class="sub-nav-link">Business Plan</li></a>
+          <a href="find-a-location.html"><li class="sub-nav-link">Find a Location</li></a>
+          <a href="naics.html"><li class="sub-nav-link">My NAICS Code</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="grow_business.html">
+          <span>Grow a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="my-customers.html"><li class="sub-nav-link">My Customers</li></a>
+          <a href="my-competitors.html"><li class="sub-nav-link">My Competitors</li></a>
+          <a href="build-a-report.html"><li class="sub-nav-link">Build a Report</li></a>
+          <a href="survey-help.html"><li class="sub-nav-link">Get Survey Help</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="article-home.html">
+          <span>Explore resources</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="cbb.html"><li class="sub-nav-link">Census Business Builder</li></a>
+          <a href="restaurant-case.html"><li class="sub-nav-link">Start a Restaurant</li></a>
+          <a href="daycare-case.html"><li class="sub-nav-link">Start a Daycare</li></a>
+          <a href="salon-case.html"><li class="sub-nav-link">Start a Beauty Salon</li></a>
+        </ul>
+      </li>
+
+      <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- nav mobile -->
+<nav id="nav-mobile" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner">
+    <ul class="usa-nav-primary usa-accordion">
+      <li>
+        
+        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+          <span>Start a Business</span>
+        </button>
+          <ul id="side-nav-1" class="usa-nav-submenu">
+            <li>
+              <a href="new_business.html">Overview</a>
+            </li>
+            <li>
+              <a href="business-plan.html">Business Plan</a>
+            </li>
+            <li>
+              <a href="find-a-location.html">Find a Location</a>
+            </li>
+            <li>
+              <a href="naics.html">My NAICS Code</a>
+            </li>
+          </ul>
+      </li>
+  
+
+      <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+            <span>Grow a Business</span>
+          </button>
+          <ul id="sidenav-2" class="usa-nav-submenu">
+            <li>
+              <a href="grow_business.html">Overview</a>
+            </li>
+            <li>
+              <a href="my-customers.html">My Customers</a>
+            </li>
+            <li>
+              <a href="my-competitors.html">My Competitors</a>
+            </li>
+            <li>
+              <a href="build-a-report.html">Build a Report</a>
+            </li>
+            <li>
+              <a href="survey-help.html">Survey Help</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+            <span>Explore Resources</span>
+          </button>
+          <ul id="sidenav-3" class="usa-nav-submenu">
+            <li>
+              <a href="article-home.html">Home</a>
+            </li>
+            <li>
+              <a href="cbb.html">Census Business Builder</a>
+            </li>
+            <li>
+              <a href="restaurant-case.html">Start a Restaurant</a>
+            </li>
+            <li>
+              <a href="daycare-case.html">Start a Day Care</a>
+            </li>
+          </ul>
+          <li>
+              <a href="salon-case.html">Start a Beauty Salon</a>
+            </li>
+        </li>
+
+        <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<!--End of Nav-->
+
+<div class="usa-overlay"></div>
+
+<main class="usa-grid-wide usa-section usa-content usa-layout-docs" id="main-content">
+
+  <!-- Side nav -->
+  <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+    <ul class="usa-sidenav-list">
+      <li>
+        <a class="usa-current" href="#daycare-0">Starting a Day Care Facility</a>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a href= '#daycare-1'>Find Your Customers</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <!-- sublinks -->
+          <li>
+            <a href= '#daycare-1a' >Age</a>
+          </li>
+          <li>
+            <a href= '#daycare-1b' >Average household size</a>
+          </li>
+          <li>
+            <a href= '#daycare-1c' >Median household income</a>
+          </li>
+          <!-- End of sublinks -->
+        </ul>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#daycare-2'>Choose a Location</a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#daycare-3'>Write a Business Plan</a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#daycare-4'>Apply for a Loan</a>
+        <!-- Main header end -->
+      </li>
+
+      
+    </ul>
+  </aside>
+
+  <!-- End of Side nav -->
+
+
+  <div class="usa-width-three-fourths usa-layout-docs-main_content scrollspy">
+    <h1 id="daycare-0">Starting a Day Care Facility</h1>
+    <p class="usa-font-lead">Start a Day Care in a Family-Friendly Community with Census Bureau Data</p>
+    
+    <div class="img-container">
+      <img src="../img/stock/daycare.jpg">
+    </div>
+    
+    <!-- Section 1 -->
+    <h2 id="daycare-1">Find Your Customers</h2>
+    <p>Our data can help you learn more about your potential customers and if there is consumer demand for your type of business. Here are some factors to consider when opening a day care. </p>
+    <h3 id="daycare-1a">Age</h3>
+    <p>Your target customers include parents (and their kids). Knowing the age breakdown of a certain area can help you determine if there is a demand for a day care business. If there is a high percentage of children, there is likely a demand for a child care facility.</p>
+    <p></br>Using demographic data, you will be able to tell how much of the population in a certain area is under the age of five.</p>
+    <h3 id="daycare-1b">Average household size</h3>
+    <p>Families are the foundation of day care centers. To find more customers, you will most likely want to search for an area that has at least an average household size of three.</p>
+    <p class="tip"></br>TIP: You can compare household sizes with age ranges to better understand the makeup of families in certain communities. </p>
+    <h3 id="daycare-1c">Median household income</h3>
+    <p>Day care is a considerable expense for families, so you will want to find customers that can afford your services. Use median household income to determine if the annual income of a certain area is high enough to afford day care services.</p>
+    <p></br><a href="my-customers.html">Find out more</a> about your customers. </p>
+    
+
+    <!-- Section 2 -->
+    <h2 id="daycare-2">Choose a Location</h2>
+    <p>Finding the perfect location is essential for a successful business. Some factors to consider when looking for a place to start your day care include:</p>
+    <ul>
+      <li>Number of day care services in a certain area</li>
+      <li>Determine how many day care businesses already exist nearby</li>
+      <li>Population per day care facility</li>
+      <li>Determine if there is a market need for more day care facilities in your area</li>
+    </ul>
+    <p class="tip"></br>TIP: Other factors to consider when choosing a location include your city’s child care licensing procedures as well as city zoning laws. </p>
+
+    <!-- Section 3 -->
+    <h2 id="daycare-3">Write a Business Plan</h2>
+    <p>Once you have established who your target market is and where you will locate your business, you are ready to write a business plan for your day care center. Your plan will help you outline financial and organizational goals for your business. </p>
+    <p></br>Want to learn how to write a business plan? <a href="business-plan.html">Check out</a> our guide.</p>
+
+    <!-- Section 4 -->
+    <h2 id="daycare-4">Apply for a Loan</h2>
+    <p>Banks and other lenders will want to know about your day care’s market, as well as its competitors. Using <a href="build-a-report.html">Census Business Builder reports,</a> you can create an interactive, data-driven report that can help demonstrate the strength of your industry. </p>
+    <p></br>Looking for help in applying data to your loan application? Check out <a href="https://www.sba.gov/loans-grants/see-what-sba-offers/sba-loan-programs/general-small-business-loans-7a/7a-loan-application-checklist" target="_blank">this Small Business Administration checklist</a> for more information about applying for a loan. </p>
+
+  </div>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="usa-footer usa-footer-medium" role="contentinfo">
+
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+
+         
+
+        
+          <img class="usa-footer-logo-img" src="../img/census-logo-white.svg" alt="Logo image"> 
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+<script src="../js/uswds.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+
+  <!--
+
+      Built by Coding it Forward Fellows 
+      (https://www.codingitforward.com/)
+
+    -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Census for Small Business</title>
+  <meta name="description" content=  'Metadata description' >
+
+
+   
+
+  
+  	<link type="text/css" rel="stylesheet" href="../css/smb.css">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon-57.png"/>
+
+  	<script src="../js/jquery.min.js"></script>
+    <script src="../js/uswds.min.js"></script>
+    <script src="../js/smb.js"></script> 
+	
+
+</head>
+<!-- End of Head -->
+
+<body class="layout-demo">
+<!-- Nav -->
+<div class="usa-navbar">
+  <button class="usa-menu-btn">Menu</button>
+  <div class="usa-logo" id="logo">
+    <a href="../index.html"><img src="../img/census-logo-white.svg" alt="Census Bureau logo white"></a>
+  </div>
+</div>
+
+<!-- nav desktop -->
+<nav id="nav-desktop" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner usa-grid-wide">
+    <ul class="usa-nav-primary usa-accordion">
+      <li class="all-links">
+        <a class="usa-nav-link" href="new_business.html">
+          <span>Start a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="business-plan.html"><li class="sub-nav-link">Business Plan</li></a>
+          <a href="find-a-location.html"><li class="sub-nav-link">Find a Location</li></a>
+          <a href="naics.html"><li class="sub-nav-link">My NAICS Code</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="grow_business.html">
+          <span>Grow a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="my-customers.html"><li class="sub-nav-link">My Customers</li></a>
+          <a href="my-competitors.html"><li class="sub-nav-link">My Competitors</li></a>
+          <a href="build-a-report.html"><li class="sub-nav-link">Build a Report</li></a>
+          <a href="survey-help.html"><li class="sub-nav-link">Get Survey Help</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="article-home.html">
+          <span>Explore resources</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="cbb.html"><li class="sub-nav-link">Census Business Builder</li></a>
+          <a href="restaurant-case.html"><li class="sub-nav-link">Start a Restaurant</li></a>
+          <a href="daycare-case.html"><li class="sub-nav-link">Start a Daycare</li></a>
+          <a href="salon-case.html"><li class="sub-nav-link">Start a Beauty Salon</li></a>
+        </ul>
+      </li>
+
+      <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- nav mobile -->
+<nav id="nav-mobile" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner">
+    <ul class="usa-nav-primary usa-accordion">
+      <li>
+        
+        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+          <span>Start a Business</span>
+        </button>
+          <ul id="side-nav-1" class="usa-nav-submenu">
+            <li>
+              <a href="new_business.html">Overview</a>
+            </li>
+            <li>
+              <a href="business-plan.html">Business Plan</a>
+            </li>
+            <li>
+              <a href="find-a-location.html">Find a Location</a>
+            </li>
+            <li>
+              <a href="naics.html">My NAICS Code</a>
+            </li>
+          </ul>
+      </li>
+  
+
+      <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+            <span>Grow a Business</span>
+          </button>
+          <ul id="sidenav-2" class="usa-nav-submenu">
+            <li>
+              <a href="grow_business.html">Overview</a>
+            </li>
+            <li>
+              <a href="my-customers.html">My Customers</a>
+            </li>
+            <li>
+              <a href="my-competitors.html">My Competitors</a>
+            </li>
+            <li>
+              <a href="build-a-report.html">Build a Report</a>
+            </li>
+            <li>
+              <a href="survey-help.html">Survey Help</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+            <span>Explore Resources</span>
+          </button>
+          <ul id="sidenav-3" class="usa-nav-submenu">
+            <li>
+              <a href="article-home.html">Home</a>
+            </li>
+            <li>
+              <a href="cbb.html">Census Business Builder</a>
+            </li>
+            <li>
+              <a href="restaurant-case.html">Start a Restaurant</a>
+            </li>
+            <li>
+              <a href="daycare-case.html">Start a Day Care</a>
+            </li>
+          </ul>
+          <li>
+              <a href="salon-case.html">Start a Beauty Salon</a>
+            </li>
+        </li>
+
+        <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<!--End of Nav-->
+
+<div class="usa-overlay"></div>
+
+<main class="usa-grid-wide usa-section usa-content usa-layout-docs" id="main-content">
+
+  <!-- Side nav -->
+  <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+    <ul class="usa-sidenav-list">
+      <li>
+        <a class="usa-current" href="#business-plan-0">About Business Plans</a>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#business-plan-1' >Use Census Bureau Data for Your Plan</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <!-- sublinks -->
+          <li>
+            <a href= '#business-plan-1a' >Find your classification codes</a>
+          </li>
+          <li>
+            <a href= '#business-plan-1b' >Conduct market research</a>
+          </li>
+          <li>
+            <a href= '#business-plan-1c' >Understand the competition</a>
+          </li>
+          <li>
+            <a href= '#business-plan-1d' >Identify your customers</a>
+          </li>
+          <li>
+            <a href= '#business-plan-1e'> Find your suppliers</li>
+          <!-- End of sublinks -->
+        </ul>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#business-plan-2'>How to write a business plan</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href= '#business-plan-2a' >Census Business Builder</a>
+          </li>
+          <li>
+            <a href= '#business-plan-2b' >Small Business Administration</a>
+          </li>
+          <li>
+            <a href= '#business-plan-2c' >SCORE.org</a>
+          </li>
+        </ul>
+      </li>
+
+      
+    </ul>
+  </aside>
+
+  <!-- End of Side nav -->
+
+
+  <div class="usa-width-three-fourths usa-layout-docs-main_content scrollspy">
+    <h1 id="business-plan-0">About Business Plans</h1>
+    <p class="usa-font-lead">A business plan is a roadmap that will help you prepare for the next three to five years of your venture. Before you start writing, you’ll need to understand the ins and outs of your customers, competitors, and market.</p>
+    
+    <div class="img-container">
+      <img src="../img/stock/business-plan.jpg">
+    </div>
+    
+    <!-- Section 1 -->
+    <h2 id="business-plan-1" >Use Census Bureau Data for Your Plan</h2>
+    <p>We have a wealth of information that you can use to create the best business plan for your data-driven business.</p>
+    <h3 id="business-plan-1a">Find your classification codes</h3>
+    <p>The North American Identification Classification System (NAICS) is used by the United States, Canada, and Mexico to classify businesses. Identifying your code will help you gather the data for your type of business and help to clearly define the types of activities common to your type of business. Knowing your NAICS code is also useful for other federal, state, and local government filings.</p>
+
+    <h3 id="business-plan-1b">Conduct market research</h3>
+    <p>Identify market patterns to find opportunities and business risks. Data can help you find out more about your community’s employment, like how many people are employed or the average payroll per employee for similar businesses. With consumer spending data, you can also gather information about how potential customers spend their money. Understanding your market will set a strong foundation for your business plan.</p>
+
+    <h3 id="business-plan-1c">Understand the competition</h3>
+    <p>There are similar businesses in every community, so understanding your competition will help your business thrive. Discovering how many similar businesses exist in your area can help you identify an ideal location, where the ratio of customers to businesses is beneficial for you. Our data will help you create a plan that accounts for the competition</p>
+
+    <h3 id="business-plan-1d">Identify your customers</h3>
+    <p>Customers are the key to a successful business. Whether you are creating a family-friendly business or looking to cater to a certain cultural group, we have the resources you need to learn about potential customers in your market. Find information about your potential customers’ ages, median incomes, employment statuses, and more to help you reach the right people. </p>
+    <p class="tip"></br>TIP: Use the filter tool in CBB to identify your target market. You may filter the population using any variable available in CBB to find the best customers for your business.</p>
+    <p></br>If you’re conducting business-to-business transactions, we have resources that can help you identify your customers’ needs. You can discover information about the number of establishments, total revenues, and more in your area.</p>
+
+    <h3 id="business-plan-1e">Find your suppliers</h3>
+    <p>Any business needs supplies to operate. Discovering how many wholesalers or industry retailers exist nearby can help you determine if you'll have the proper resources necessary for your day-to-day operations.</p>
+
+    <!-- Section 2 -->
+    <h2 id="business-plan-2">How to write a business plan</h2>
+    <p>Now that you know what data exists, it’s time to write a plan. Don’t know where to begin? These free business plan resources can help you apply Census Bureau data in your plan. </p>
+
+    <h3 id="business-plan-2a">Census Business Builder</h3>
+    <p>The Census Business Builder (CBB) allows you to compile the data you need into a report, which can be used in a business plan. <a href="cbb.html" target="_blank">Learn how to create a report in CBB.</a></p>
+
+    <h3 id="business-plan-2b">Small Business Administration</h3>
+    <p>The Small Business Administration (SBA) offers <a href="https://www.sba.gov/starting-business/write-your-business-plan" target="_blank">a guide on how to write a simple business plan.</a> These instructions will teach you how to write an executive summary or conduct data-driven market analyses. If you’re still stuck, the SBA provides <a href="https://www.sba.gov/tools/sba-learning-center/search/training" target="_blank">a learning center</a>, as well as <a href="https://www.sba.gov/tools/local-assistance" target="_blank">local assistance</a> in your community.</p>
+
+    <h3 id="business-plan-2c">SCORE.org</h3>
+    <p>SCORE is a nonprofit association that helps small businesses get off the ground. They provide <a href="https://www.score.org/resource/business-plan-template-startup-business" target="_blank">a small business plan template and worksheets</a> to help you write and execute your business plan. </p>
+
+
+    <h2>Ready to get started?</h2>
+    <a class="usa-button usa-button-big usa-button-primary" href="cbb.html">Find your data</a>
+
+
+  </div>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="usa-footer usa-footer-medium" role="contentinfo">
+
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+
+         
+
+        
+          <img class="usa-footer-logo-img" src="../img/census-logo-white.svg" alt="Logo image"> 
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+<script src="../js/uswds.js"></script>
+</body>
+</html>

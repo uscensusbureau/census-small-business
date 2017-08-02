@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Head -->
+<head>
+  <meta charset="utf-8">
+
+  <!--
+
+      Built by Coding it Forward Fellows 
+      (https://www.codingitforward.com/)
+
+    -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Restaurant Use Case</title>
+  <meta name="description" content=  'Metadata description' >
+
+
+   
+
+  
+  	<link type="text/css" rel="stylesheet" href="../css/smb.css">
+    <link rel="shortcut icon" type="image/png" href="../img/favicon-57.png"/>
+
+  	<script src="../js/jquery.min.js"></script>
+    <script src="../js/uswds.min.js"></script>
+    <script src="../js/smb.js"></script> 
+	
+
+</head>
+<!-- End of Head -->
+
+<body class="layout-demo">
+<!-- Nav -->
+<div class="usa-navbar">
+  <button class="usa-menu-btn">Menu</button>
+  <div class="usa-logo" id="logo">
+    <a href="../index.html"><img src="../img/census-logo-white.svg" alt="Census Bureau logo white"></a>
+  </div>
+</div>
+
+<!-- nav desktop -->
+<nav id="nav-desktop" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner usa-grid-wide">
+    <ul class="usa-nav-primary usa-accordion">
+      <li class="all-links">
+        <a class="usa-nav-link" href="new_business.html">
+          <span>Start a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="business-plan.html"><li class="sub-nav-link">Business Plan</li></a>
+          <a href="find-a-location.html"><li class="sub-nav-link">Find a Location</li></a>
+          <a href="naics.html"><li class="sub-nav-link">My NAICS Code</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="grow_business.html">
+          <span>Grow a business</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="my-customers.html"><li class="sub-nav-link">My Customers</li></a>
+          <a href="my-competitors.html"><li class="sub-nav-link">My Competitors</li></a>
+          <a href="build-a-report.html"><li class="sub-nav-link">Build a Report</li></a>
+          <a href="survey-help.html"><li class="sub-nav-link">Get Survey Help</li></a>
+        </ul>
+      </li>
+      
+      <li class="all-links">
+        <a class="usa-nav-link" href="article-home.html">
+          <span>Explore resources</span>
+        </a>
+        <ul class="sub-nav-container">
+          <a href="cbb.html"><li class="sub-nav-link">Census Business Builder</li></a>
+          <a href="restaurant-case.html"><li class="sub-nav-link">Start a Restaurant</li></a>
+          <a href="daycare-case.html"><li class="sub-nav-link">Start a Daycare</li></a>
+          <a href="salon-case.html"><li class="sub-nav-link">Start a Beauty Salon</li></a>
+        </ul>
+      </li>
+
+      <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+            <input id="search-field-small" type="search" name="search">
+            <button type="submit">
+              <span class="usa-sr-only">Search</span>
+            </button>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<!-- nav mobile -->
+<nav id="nav-mobile" role="navigation" class="usa-nav">
+  <div class="usa-nav-inner">
+    <ul class="usa-nav-primary usa-accordion">
+      <li>
+        
+        <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+          <span>Start a Business</span>
+        </button>
+          <ul id="side-nav-1" class="usa-nav-submenu">
+            <li>
+              <a href="new_business.html">Overview</a>
+            </li>
+            <li>
+              <a href="business-plan.html">Business Plan</a>
+            </li>
+            <li>
+              <a href="find-a-location.html">Find a Location</a>
+            </li>
+            <li>
+              <a href="naics.html">My NAICS Code</a>
+            </li>
+          </ul>
+      </li>
+  
+
+      <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+            <span>Grow a Business</span>
+          </button>
+          <ul id="sidenav-2" class="usa-nav-submenu">
+            <li>
+              <a href="grow_business.html">Overview</a>
+            </li>
+            <li>
+              <a href="my-customers.html">My Customers</a>
+            </li>
+            <li>
+              <a href="my-competitors.html">My Competitors</a>
+            </li>
+            <li>
+              <a href="build-a-report.html">Build a Report</a>
+            </li>
+            <li>
+              <a href="survey-help.html">Survey Help</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+            <span>Explore Resources</span>
+          </button>
+          <ul id="sidenav-3" class="usa-nav-submenu">
+            <li>
+              <a href="article-home.html">Home</a>
+            </li>
+            <li>
+              <a href="cbb.html">Census Business Builder</a>
+            </li>
+            <li>
+              <a href="restaurant-case.html">Start a Restaurant</a>
+            </li>
+            <li>
+              <a href="daycare-case.html">Start a Day Care</a>
+            </li>
+          </ul>
+          <li>
+              <a href="salon-case.html">Start a Beauty Salon</a>
+            </li>
+        </li>
+
+        <li class="all-links">
+        <a class="usa-nav-link" href="advice.html">
+          <span>Get advice</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="usa-nav-secondary">
+        <form class="usa-search usa-search-small js-search-form">
+          <div role="search">
+            <label class="usa-sr-only" for="search-field-small">Search small</label>
+          </div>
+        </form>
+        <ul class="usa-unstyled-list usa-nav-secondary-links">
+          <li class="js-search-button-container">
+            <button class="usa-header-search-button js-search-button">Search</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<!--End of Nav-->
+
+<div class="usa-overlay"></div>
+
+<main class="usa-grid-wide usa-section usa-content usa-layout-docs" id="main-content">
+
+  <!-- Side nav -->
+  <aside class="usa-width-one-fourth usa-layout-docs-sidenav">
+    <ul class="usa-sidenav-list">
+      <li>
+        <a class="usa-current" href="#restaurant-0">Creating a Restaurant From Scratch</a>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a href= '#restaurant-1'>Determine your Restaurant Type</a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#restaurant-2'>Find Your Customers</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href= '#restaurant-2a' >Median household income</a>
+          </li>
+          <li>
+            <a href= '#restaurant-2b' >Consumer spending</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#restaurant-3'>Choose a Location</a>
+        <!-- Main header end -->
+        <ul class="usa-sidenav-sub_list">
+          <li>
+            <a href= '#restaurant-3a' >Competing businesses</a>
+          </li>
+          <li>
+            <a href= '#restaurant-3b' >Complementary businesses </a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#restaurant-4'>Write a Business Plan</a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#restaurant-5'>Apply for a Loan</a>
+        <!-- Main header end -->
+      </li>
+
+      <li>
+        <!-- Main header -->
+        <a class="" href= '#restaurant-6'>Learn about Laws and Regulations</a>
+        <!-- Main header end -->
+      </li>
+
+
+      
+    </ul>
+  </aside>
+
+  <!-- End of Side nav -->
+
+
+  <div class="usa-width-three-fourths usa-layout-docs-main_content scrollspy">
+    <h1 id="restaurant-0">Creating a Restaurant From Scratch</h1>
+    <p class="usa-font-lead">Whether you’re starting a family diner or fine-food establishment, use Census Bureau data to create your dream restaurant.</p>
+    
+    <div class="img-container">
+      <img src="../img/stock/restaurant.jpg">
+    </div>
+    
+    <!-- Section 1 -->
+    <h2 id="restaurant-1">Determine Your Restaurant Type</h2>
+    <p>There are many types of restaurants to choose from, including casual dining, fast food, food trucks, pubs, and more. Choosing a restaurant type will help you with other business decisions — like finding your customers</p>
+    
+    <!-- Section 2 -->
+    <h2 id="restaurant-2">Find Your customers</h2>
+    <p>Our data can help you find out how much your customers can afford to spend. To determine who your ideal customers may be, you will want to consider the following pieces of information:</p>
+
+    <h3 id="restaurant-2a">Median household income</h3>
+    <p>Knowing how much people make in a year will help you decide how to price your food and drinks. The more money people make through their income, the more they can afford to spend at your restaurant.</p>
+
+    <h3 id="restaurant-2b">Consumer spending</h3>
+    <p>Understand what types of products and services your potential customers are spending their money on by using our consumer spending data. To learn more about how much people spend on restaurants in a certain area, look for consumer spending patterns on dining out.</p>
+    <p class="tip"></br>TIP: Look at consumer spending habits within restaurant-related industries. Many people dine out before going to a movie or show, or grab drinks before or after eating at a restaurant; so, you might want to consider the consumer spending patterns for alcoholic beverages and entertainment. </p>
+    <p></br><a href="my-customers.html">Discover more information</a> about finding your customers.</p>
+
+    <!-- Section 3 -->
+    <h2 id="restaurant-3">Choose a location</h2>
+    <p>Choosing the perfect location for your restaurant relies on knowing your customers as well as understanding your competitors and complementary businesses.</p>
+
+    <h3 id="restaurant-3a">Competing businesses</h3>
+    <p>Other restaurants in your area are your competition. A great location is an area that lacks restaurants or has enough customers to help your restaurant be successful. To understand the business landscape in a certain area, you will want to know how many customers each restaurant has on average. Our data point called “population per establishment” will help you determine if there is a need for more restaurants in your chosen area.</p>
+    <p></br><a href="my-competitors.html">Find out more</a> about your competitors.</p>
+
+    <h3 id="restaurant-3b">Complementary businesses</h3>
+    <p>Businesses that may interest your target market but are not the same as your business are called complementary businesses. Establishing your restaurant near a complementary store may help boost your foot traffic since your customers are likely interested in similar goods or services.</p>
+    <p></br>Businesses that complement your restaurant include, but are not limited to, bakeries, entertainment venues, and bars.</p>
+    <p></br>Need help finding a location? <a href="find-a-location.html">Check out our guide</a> for more information.</p>
+
+    <!-- Section 4 -->
+    <h2 id="restaurant-4">Write a business plan</h2>
+    <p>Once you have figured out the foundational information for your restaurant and customers, it’s time to start a business plan.</p>
+    <p></br>Writing a business plan will help you create a roadmap for your restaurant and establish guidelines for the next three to five years of operations. </p>
+    <p></br>Not sure how to write a business plan for a restaurant? <a href="business-plan.html">Learn more.</a></p>
+
+    <!-- Section 5 -->
+    <h2 id="restaurant-5">Apply for a loan</h2>
+    <p>Banks and other small lenders will want to know about your restaurant’s target market and competitors. <a href="build-a-report.html">A Census Business Builder report</a> can help you make a case for your restaurant by providing a data benchmark, and it can also help you demonstrate the strength of your business plan</p>
+    <p></br>Need help applying data to your loan application? Check out <a href="https://www.sba.gov/loans-grants/see-what-sba-offers/sba-loan-programs/general-small-business-loans-7a/7a-loan-application-checklist" target="_blank">this Small Business Administration checklist</a> for more information about applying for a loan.  </p>
+
+    <!-- Section 6 -->
+    <h2 id="restaurant-6">Learn about Laws and Regulations</h2>
+    <p>Every type of business has many laws and regulations to follow. For more information about federal regulations, <a href="https://www.sba.gov/business-guide/launch/apply-for-licenses-permits-federal-state" target="_blank">consult the Small Business Administration</a>. Want to know more about laws in your area? Talk with your local <a href="https://www.uschamber.com/members/chambers/accreditation" target="_blank">Chamber of Commerce</a> or <a href="https://www.sba.gov/tools/local-assistance/sbdc" target="_blank"> Small Business Development Center.</a></p>
+
+
+  </div>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="usa-footer usa-footer-medium" role="contentinfo">
+
+  <div class="usa-footer-secondary_section">
+    <div class="usa-grid">
+      <div class="usa-footer-logo usa-width-one-half">
+
+         
+
+        
+          <img class="usa-footer-logo-img" src="../img/census-logo-white.svg" alt="Logo image"> 
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End of Footer -->
+
+<!-- Update the link path to where your JavaScript file is located. For example: /path/to/your/assets/js/lib/uswds.min.js -->
+<script src="../js/uswds.js"></script>
+</body>
+</html>
